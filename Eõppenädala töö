@@ -1,6 +1,6 @@
 // Tuled pimeduses eõppenädal
 // Juhend: https://www.instructables.com/Light-Sensor-Photoresistor-Arduino-Tinkercad/
-
+// Link tööle: https://www.tinkercad.com/things/fdCBjkSt8v1-tuled-pimeduses
 const int ldrPin = A0; // Fotoresistori pin
 const int ledPin = 9; // LED pin
 int ldrValue = 0; // Muutujad  
