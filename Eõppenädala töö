@@ -1,0 +1,26 @@
+// Tuled pimeduses eõppenädal
+// Juhend: https://www.instructables.com/Light-Sensor-Photoresistor-Arduino-Tinkercad/
+
+const int ldrPin = A0; // Fotoresistori pin
+const int ledPin = 9; // LED pin
+int ldrValue = 0; // Muutujad  
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  ldrValue = analogRead(ldrPin);
+
+  // Tsükkel
+  if (ldrValue < 100) {
+    digitalWrite(ledPin, HIGH);
+    Serial.println("Pime");
+  } else {
+    digitalWrite(ledPin, LOW);
+    Serial.println("Valge");
+  }
+
+  delay(1000);
+}
