@@ -13,7 +13,7 @@ void setup() {
 void loop() {
   ldrValue = analogRead(ldrPin);
 
-  // Tsükkel
+  // If 
   if (ldrValue < 100) {
     digitalWrite(ledPin, HIGH);
     Serial.println("Pime");
